@@ -1,4 +1,4 @@
-# CNC Tool Condition Prediction — Industrial ML Project
+# CNC Tool Condition Prediction 
 
 A machine learning project for **binary classification of CNC milling tool wear** (worn vs. unworn) from multi-sensor telemetry, with a primary focus on **detecting and preventing data leakage** in experiment-structured time-series data.
 
@@ -49,7 +49,7 @@ The central contribution of this project. Four splitting strategies were compare
 | Strategy | Test Accuracy | Validity |
 |----------|--------------|----------|
 | Row-level (shuffle=True) | ~97–100% | ❌ Group leakage |
-| Row-level (shuffle=False) | ~68% | ❌ Boundary-dependent |
+| Row-level (shuffle=False) | ~87% | ❌ Boundary-dependent |
 | **By experiment ID (stratified)** | **~71–78%** | ✅ Valid |
 | GroupKFold CV | 0.36–0.92 (high variance) | ✅ Reveals dataset limits |
 
@@ -141,8 +141,8 @@ With only 18 experimental groups, model metrics are highly sensitive to which ex
 ```
 CNC_ToolCondition_Prediction/
 │
-├── notebooks/
-│   └── cnc_tool_condition.ipynb     # Main analysis notebook
+|
+|── cnc_tool_condition.ipynb     # Main analysis notebook
 │
 ├── results/
 │   ├── benchmark_mutual.png         # Model comparison — Mutual dataset
@@ -167,9 +167,3 @@ CNC_ToolCondition_Prediction/
 | pandas / numpy | Data manipulation & feature engineering |
 | matplotlib | Visualization & benchmarking plots |
 | Python 3 | Language |
-
----
-
-## 👤 Author
-
-**Eruhonya** — [github.com/Eruhonya](https://github.com/Eruhonya)
