@@ -142,7 +142,7 @@ With only 18 experimental groups, model metrics are highly sensitive to which ex
 CNC_ToolCondition_Prediction/
 │
 |
-|── cnc_tool_condition.ipynb     # Main analysis notebook
+├── ToolCondition_Prediction.ipynb   # Main analysis notebook
 │
 ├── results/
 │   ├── benchmark_mutual.png         # Model comparison — Mutual dataset
